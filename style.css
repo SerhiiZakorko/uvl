@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile_header,
+.navbar_mobile,
+.img_mobile {
+    display: none;
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    /* font-style: normal; */
+    font-size: 3vw;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main_wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.white_part {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 12vw;
+    cursor: pointer;
+    margin: 20px 0 0 40px;
+}
+
+.white_part h2 {
+    margin: 50px 0 30px 50px;
+}
+
+.white_part h1 {
+    margin-left: 100px;
+    margin-top: 20px;
+    position: absolute;
+    color: rgb(76, 76, 76);
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.soc_icons_wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    margin-bottom: 10px;
+
+}
+
+.soc_icons_wrapper a {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.socials img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.photo_wrapper {
+    background-image: url(./src/Creative_studio_20260526_223410.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.small_logo {
+    margin: 20px 20px 0 auto;
+    padding: 1%;
+    display: flex;
+    justify-content: right;
+}
+
+.small_logo img {
+    width: 5vw;
+    opacity: 80%;
+}
+
+.ulWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo_wrapper ul {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.ulWrapper a {
+    color: rgb(0, 25, 48);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin: 10px 30px 10px auto;
+    z-index: 1;
+    transform: translateX(7vw);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.yellowBG {
+    height: 30px;
+    width: 7vw;
+    background-color: rgb(214, 111, 8);
+    transform: translate(7vw, 10px);
+}
+
+.yellowBGOnAction {
+    transform: translate(-1vw, 10px);
+    transition: 0.5s;
+}
+
+.chapter {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-top: 1px;
+    background-color: rgb(242, 242, 242);
+}
+
+#services {
+    grid-template-columns: 25% 75%;
+}
+
+.chapter .text_wrapper {
+    padding: 20px 20px;
+}
+
+.chapter .text_wrapper h2 {
+    margin: 20px 0 30px 50px;
+}
+
+.chapter .text_wrapper p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.chapter img {
+    width: 100%;
+}
+
+.divider {
+    background-color: rgba(163, 163, 163, 0.242);
+    height: 1px;
+    width: 100%;
+}
+
+.photo_big {
+    width: 100%;
+}
+
+
+
+.vaccinationSlide,
+.laboratorySlide {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.photoFrame {
+    background-color: rgb(242, 242, 242);
+}
+
+.photoFrame img {
+    width: 100%;
+    /* height: 100%;; */
+}
+
+.vaccinationSlide .text_wrapper,
+.laboratorySlide .text_wrapper {
+    padding: 20px 20px;
+    background-color: rgb(242, 242, 242);
+}
+
+.vaccinationSlide li,
+.laboratorySlide p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: default;
+    list-style: decimal;
+    margin-left: 8%;
+}
+
+.vaccinationSlide h2,
+.laboratorySlide h2 {
+    margin: 20px 0 30px 50px;
+}
+
+
+.vaccinationSlide .text_wrapper ul {
+    list-style: none;
+    width: 65%;
+}
+
+/* слайдер */
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+/* слайдер */
+
+footer {
+    margin: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+footer h2 {
+    letter-spacing: 10px;
+}
+
+footer h3 {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 100%;
+
+}
+
+.contacts div {
+    width: 100%;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #323437;
+    text-align: left;
+
+}
+
+.contacts h3 {
+    width: 100%;
+}
+
+@media screen and (max-width:1150px) {
+
+    .photo_wrapper ul {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .ulWrapper a {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 12vw;
+        cursor: pointer;
+        margin: 10px 0 0 10px;
+    }
+
+    .white_part h2 {
+        margin: 10px 0 20px 30px;
+        font-size: 17px;
+    }
+
+    .socials img {
+        width: 4vw;
+        cursor: pointer;
+    }
+
+    .chapter img {
+        margin: auto;
+    }
+
+    footer h2 {
+        text-align: center;
+        letter-spacing: 3px;
+        color: #323437;
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width:930px) {
+    .main_wrapper {
+        grid-template-columns: 30% 70%;
+    }
+
+    .small_logo {
+        margin: 10px 10px 0 auto;
+    }
+
+    .photo_wrapper {
+        /* background: #a7cd5c; */
+        background-image: url(./src/steto.jpg);
+    }
+
+    .photo_wrapper ul {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .ulWrapper a {
+        font-size: 20px;
+        margin: 5px 30px 5px auto;
+    }
+
+    .chapter {
+        grid-template-columns: 60% 40%;
+    }
+
+    #services {
+        grid-template-columns: 40% 60%;
+    }
+
+    .white_part h1 {
+        top: 0px;
+        left: 21vw;
+        color: #1e436f;
+        letter-spacing: 2px;
+        max-width: 70%;
+    }
+
+    footer h3 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+
+}
+
+@media screen and (max-width:780px) {
+    .main_wrapper {
+        display: none;
+    }
+
+    .mobile_header {
+        display: grid;
+        grid-template-columns: 10% calc(90% - 20px);
+        gap: 20px;
+    }
+
+    .navbar_mobile {
+        display: block;
+
+    }
+
+    .navbar_mobile ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 3vw;
+        list-style: none;
+    }
+
+    .navbar_mobile a {
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: #323437;
+    }
+
+    .intro {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 10px auto 10px 0px;
+        background-image: url(./src/banner_mobile.png);
+    }
+
+    .mobile_contacts {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 7%;
+    }
+
+    .intro h2 {
+        margin: auto;
+        color: #323437;
+        font-size: 4.5vw;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .mobile_contacts img {
+        width: 7vw;
+        border-radius: 5px;
+    }
+
+    .mobile_logo {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .chapter {
+        display: block;
+    }
+
+    .chapter_img {
+        display: none;
+    }
+
+    .img_mobile {
+        display: block;
+    }
+
+}
